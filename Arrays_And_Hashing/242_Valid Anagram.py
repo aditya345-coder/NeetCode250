@@ -1,0 +1,17 @@
+# Link: https://leetcode.com/problems/valid-anagram/description/
+
+
+"""Problem Description:
+Given two strings s and t, return true if t is an anagram of s, and false otherwise.
+"""
+
+# Solution:
+class Solution:
+    def isAnagram(self, s: str, t: str) -> bool:
+        if (len(s)!=len(t)):
+            return False
+        s=sorted(s); t=sorted(t)
+        for i in range(len(s)):
+            if (s[i]!=t[i]):
+                return False
+        return True
