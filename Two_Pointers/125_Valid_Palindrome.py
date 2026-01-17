@@ -8,7 +8,7 @@ Given a string s, return true if it is a palindrome, or false otherwise.
 """
 
 
-# Solution:
+# Solution: Time Complexity:O(N) Space Complexity: O(N)
 class Solution:
     def isPalindrome(self, s: str) -> bool:
         clean_org=""
@@ -22,5 +22,12 @@ class Solution:
         
         return clean_org==rev_org
 
-                
+# Alternate Solution: Time Complexity:O(N) Space Complexity: O(N)
+class Solution:
+    def isPalindrome(self, s: str) -> bool:
+        proper_string=""
+        for i in range(len(s)):
+            if (s[i].isalnum()):
+                proper_string+=s[i].lower()
         
+        return proper_string=="".join(reversed(proper_string))
