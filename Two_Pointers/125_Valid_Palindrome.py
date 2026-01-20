@@ -8,7 +8,7 @@ Given a string s, return true if it is a palindrome, or false otherwise.
 """
 
 
-# Solution: Time Complexity:O(N) Space Complexity: O(N)
+# Solution: Time Complexity:O(N^2) Space Complexity: O(N)
 class Solution:
     def isPalindrome(self, s: str) -> bool:
         clean_org=""
