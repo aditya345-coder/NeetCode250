@@ -9,7 +9,7 @@ You may assume that each input would have exactly one solution, and you may not 
 You can return the answer in any order.
 """
 
-# Brute Force Solution: Time Complexity: O(n), Space Complexity: O(1)
+# Brute Force Solution: Time Complexity: O(n^2), Space Complexity: O(1)
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
         for i in range(len(nums)):
