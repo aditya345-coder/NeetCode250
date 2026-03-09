@@ -29,3 +29,4 @@ class Solution:
                 if (i==len(word) or word[i]!=prefix[i]):
                     return prefix[:i]
         return prefix
+# Description: Take the first element as prefix and compare it with all the other words and find if they have same value at same index.
