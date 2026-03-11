@@ -48,3 +48,19 @@ class Solution:
             i+=1
             j-=1
         return True
+
+# Alternate Solution:  Time Complexity:O(N) Space Complexity: O(N^2)
+class Solution:
+    def isPalindrome(self, s: str) -> bool:
+        result=[]
+        for i in range(len(s)):
+            if (s[i].isalnum()):
+                result.append(s[i].lower())
+                
+        i=0; j=len(result)-1
+        while(i<j):
+            if (result[i]==result[j]):
+                i+=1; j-=1
+            else:
+                return False
+        return True
