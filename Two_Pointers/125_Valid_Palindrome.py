@@ -49,7 +49,7 @@ class Solution:
             j-=1
         return True
 
-# Alternate Solution:  Time Complexity:O(N) Space Complexity: O(N^2)
+# Alternate Solution:  Time Complexity:O(N) Space Complexity: O(N)
 class Solution:
     def isPalindrome(self, s: str) -> bool:
         result=[]
