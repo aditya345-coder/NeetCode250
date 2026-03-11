@@ -34,7 +34,7 @@ class Solution:
         return proper_string=="".join(reversed(proper_string))
 
 
-# Alternate Solution:  Time Complexity:O(N) Space Complexity: O(N)
+# Alternate Solution:  Time Complexity:O(N) Space Complexity: O(1)
 class Solution:
     def isPalindrome(self, s: str) -> bool:
         i=0; j=len(s)-1
