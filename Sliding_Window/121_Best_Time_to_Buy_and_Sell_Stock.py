@@ -16,5 +16,7 @@ class Solution:
                 val=prices[r]-prices[l]
                 if (val>cmax):
                     cmax=val
+                if (prices[l]>prices[r]):
+                    break
             maximum=max(cmax, maximum)
         return maximum
