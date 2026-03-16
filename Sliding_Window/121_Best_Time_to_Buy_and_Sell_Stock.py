@@ -20,3 +20,15 @@ class Solution:
                     break
             maximum=max(cmax, maximum)
         return maximum
+
+# Brute Force Solution: Time Complexity: O(n); Space Time Complexity: O(1)
+class Solution:
+    def maxProfit(self, prices: List[int]) -> int:
+        buy_price=prices[0]; maximum=0
+        for i in range(1,len(prices)):
+            curr_profit=prices[i]-buy_price
+            if (curr_profit>maximum):
+                maximum=curr_profit
+            if (prices[i]<buy_price):
+                buy_price=prices[i]
+        return maximum
